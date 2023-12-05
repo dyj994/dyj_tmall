@@ -1,0 +1,130 @@
+main{
+    width: 990px;
+    margin: 100px auto 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+.cart_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.cart_top div{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 30px;
+}
+.cart_top div.all_pay{
+    font-size: 14px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_top div .cart_num{
+    font-weight: 900;
+}
+.cart_top div.all_pay .total_price{
+    font-size: 20px;
+    color: #ff5000;
+    font-weight: 900;
+}
+.cart_top div.all_pay .btn_pay{
+    width: 80px;
+    height: 45px;
+    background-color: #ff5500;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 25px;
+}
+.cart_top div.all_pay .disabled{
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+.top_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.top_row .info{
+    width: 350px;
+}
+
+.goods{
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 18px;
+}
+.goods .le, .goods .ri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.goods .le{
+    width: 60%;
+}
+.goods .ri{
+    width: 40%;
+}
+.goods img{
+    width: 100px;
+    height: 100px;
+}
+
+.goods .title{
+    width: 300px;
+    margin-left: -20px;
+}
+.goods .price{
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.goods .amount{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.goods .amount input{
+    width: 50px;
+    height: 35px;
+    outline: none;
+    text-align: center;
+}
+.goods .amount .minus,
+.goods .amount .plus{
+    width: 14px;
+    height: 35px;
+    background-color: #a7a7a7;
+    position: absolute;
+    top: 0px;
+    line-height: 35px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.goods .amount .minus{
+    left: -10px;
+}
+.goods .amount .plus{
+    right: -10px;
+}
+.goods .cost{
+    color: #ff5000;
+    font-weight: 900;
+    font-size: 16px;
+}
+.goods .delete{
+    cursor: pointer;
+}

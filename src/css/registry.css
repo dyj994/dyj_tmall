@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+header{
+    height: 100px;
+    background-color: #abc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26px;
+    color: #fff;
+}
+form{
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+footer{
+    height: 100px;
+    background-color: #abc;
+}
