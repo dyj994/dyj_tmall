@@ -1,0 +1,346 @@
+/* 清除一些自带样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: '宋体';
+}
+
+body {
+    background: url(../imgs/background.png) repeat-y 0 0;
+    background-size: cover;
+}
+
+/* 顶部导航 */
+nav {
+    width: 100%;
+    padding: 0 calc((100% - 990px)/2);
+    height: 26px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .left,
+nav .right,
+nav .right li,
+nav .right li a{
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+nav .right li,
+nav .right li a{
+    height: 100%;
+    line-height: 100%;
+}
+
+nav a {
+    color: #999;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    color: #fe0137;
+    text-decoration: underline;
+}
+
+/* 顶部iconfont图标 */
+nav .icon-shouye,
+nav .icon-gouwuche,
+nav .icon-shouji {
+    color: #fe0137;
+    font-size: 8px;
+    position: relative;
+    right: -10px;
+}
+
+/* 二级导航父级 */
+nav .myTmall,
+nav .myCollection,
+nav .merchant_support,
+nav .contact_service {
+    position: relative;
+}
+nav .myTmall:hover,
+nav .myCollection:hover,
+nav .merchant_support:hover,
+nav .contact_service:hover{
+    background-color: #fff;
+}
+
+
+
+
+/* 顶部二级导航 */
+nav .myTmall .myGoods,
+nav .myCollection .collection {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 95px;
+    background-color: #fdfdfd;
+    height: 40px;
+    line-height: 20px;
+}
+
+nav .merchant_support .merchant,
+nav .contact_service .service {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 10px;
+    background-color: #fdfdfd !important;
+    line-height: 20px;
+}
+
+nav .merchant_support .merchant {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .merchant_support .merchant .title {
+    width: 100%;
+    font-weight: bold;
+    text-indent: 1em;
+}
+
+nav .merchant_support .merchant li {
+    width: 40%;
+}
+
+nav .contact_service .service {
+    width: 100px;
+}
+
+/* 头部logo及搜索框 */
+header {
+    height: 111px;
+    margin-top: 12px;
+    padding: 0 116.5px;
+}
+
+/* 顶部logo */
+header .head_logo {
+    width: 87px;
+    height: 53px;
+    float: left;
+    position: relative;
+    margin: 28px 0 0 73px;
+}
+
+header .head_logo img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 87px;
+    height: 53px;
+}
+
+/* 顶部搜索框 */
+header .head_search {
+    float: left;
+    margin: 36px 0 0 86px;
+    width: 632px;
+    height: 42px;
+    position: relative;
+}
+
+header .head_search input {
+    width: 540px;
+    height: 42px;
+    position: absolute;
+    outline: none;
+    bottom: 0;
+    right: 90px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 16px;
+    font-size: 12px;
+    color: #999;
+    line-height: 42px;
+    border: 1px solid #fe0137;
+}
+
+header .head_search .search_button {
+    width: 90px;
+    height: 42px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #fe0137;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+header .related{
+    width: 500px;
+    max-height: 500px;
+    position: absolute;
+    border: 1px solid #777;
+    top: 42px;
+    left: 20px;
+    background-color: #fff;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 10px;
+    display: none;
+}
+header .related li{
+    width: 450px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    text-indent: 2em;
+    overflow: hidden;
+}
+header .related li.active{
+    background-color: #fdfdfd;
+    color: #555;
+    font-weight: 600;
+}
+
+
+main {
+    width: 1190px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+/* 底部 */
+footer {
+    width: 1423px;
+    /* height: 843px; */
+    border-top: 1px solid #D1D7DC;
+    background-color: #fff;
+
+}
+
+/* footer .tmall_ensure {} */
+
+/* 底部第二部分  天猫保障 */
+footer .tmall_desc {
+    width: 1190px;
+    height: 213px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url(../imgs/tmallhead.png);
+    background-repeat: no-repeat;
+    background-size: 68px 25px;
+    background-position: bottom left;
+}
+
+footer .tmall_desc div {
+    width: 238px;
+    height: 90px;
+    padding-left: 52px;
+}
+
+footer .tmall_desc div h3 {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+footer .tmall_desc div ul li a {
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    color: #8b8b8b;
+    font-size: 14px;
+}
+
+footer .tmall_desc div ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .tmall_desc .mobileTmall a img {
+    width: 105px;
+    height: 105px;
+}
+
+/* 底部第三部分  天猫版权 */
+
+footer .tmall_copyright {
+    border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+    min-height: 177px;
+}
+
+footer .tmall_copyright .tmall_info {
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 5px 0;
+}
+
+footer .tmall_copyright .tmall_info a {
+    margin-right: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-family: '雅黑';
+    float: left;
+}
+
+footer .tmall_copyright .tmall_info a:hover {
+    text-decoration: underline;
+}
+
+footer .tmall_copyright .otherlink {
+    width: 1190px;
+    /* height: 387px; */
+    clear: both;
+    margin: 0 auto;
+    color: #fff;
+    font-family: '雅黑';
+    font-size: 10px;
+    padding: 5px 0;
+}
+
+footer .tmall_copyright .otherlink a {
+    color: #fff;
+    font-size: 12px;
+    font-family: '雅黑';
+    margin-right: 3px;
+    margin-left: -2px;
+    line-height: 25px;
+}
+
+footer .tmall_copyright .otherlink a:hover {
+    text-decoration: underline;
+}

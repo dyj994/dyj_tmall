@@ -1,0 +1,99 @@
+main {
+    margin: 20px auto;
+    padding: 30px;
+}
+
+main .category {
+    height: 80px;
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+main .category p {
+    font-size: 14px;
+}
+
+main .category p.allCates {
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .category p.allCates a {
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+main .category p.allCates a.chosedCate {
+    color: #FF0036;
+}
+
+main .category .sortMethod span {
+    cursor: pointer;
+    margin: 0 20px 0 0;
+}
+
+main .goods {
+    margin: 20px auto;
+    width: 95%;
+}
+
+main .goods ul {
+    width: 98%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+main .goods ul li{
+    padding: 10px;
+    width: 23%;
+    height: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    border: 1px solid #ddd;
+
+}
+main .goods ul li a{
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .goods ul li:hover{
+border: 1px solid #ff5000;
+}
+main .goods ul li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+}
+main .goods ul li p.goods_title{
+    width: 200px;
+    height: 45px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+main .goods ul li span.goods_price{
+    margin: 5px 0 0 6px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff5000;
+    font-weight: bolder;
+    align-self: start;    
+}

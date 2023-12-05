@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/layui/2.8.17/css/layui.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>用户登录</title>
+</head>
+
+<body>
+  <!-- 头部logo -->
+  <header>
+    <a href="#"><img src="../imgs/login_logo.png" alt=""></a>
+  </header>
+  <!-- 主体区 -->
+  <main>
+    <!-- 主题内容 -->
+    <div class="main_content">
+      <!-- 登录框容器 -->
+      <div class="login_container">
+        <!-- 登录框内容区 -->
+        <div class="login_content">
+          <form class="layui-form" action="">
+            <div class="layui-form-item">
+              <label class="layui-form-label">姓名：</label>
+              <div class="layui-input-block">
+                <input type="text" name="username" lay-verify="required" placeholder="请输入用户名" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">密码：</label>
+              <div class="layui-input-block">
+                <input type="password" name="password" lay-verify="required" placeholder="请输入密码" class="layui-input">
+              </div>
+            </div>
+
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit lay-filter="demo1">立即登录</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                <a href="./register.html" class="toRegistry">立即注册</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.8.17/layui.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.js"></script>
+  <script src="../script/login.js"></script>
+</body>
+
+</html>

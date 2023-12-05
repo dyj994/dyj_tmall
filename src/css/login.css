@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* 头部logo */
+header{
+    height: 75px;
+    padding-top: 10px;
+    width: 100%;
+}
+header a{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header a img{
+    width: 186px;
+    height: 26px;
+}
+/* 主体区 */
+main{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+main .main_content{
+    background: url(https://gw.alicdn.com/imgextra/i1/O1CN01h1szGY1CDZQBe1yQu_!!6000000000047-2-tps-2500-600.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+main .main_content .login_container{
+    height: 350px;
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    width: 350px;
+    padding: 25px;
+}
+main .main_content .login_container .login_content{
+    background-color: hsla(0,0%,100%,.9);
+    position: relative;
+    width: 350px;
+    min-height: 350px;
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    border-top-color: #c40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toRegistry{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #adc;
+    position: relative;
+    top: -30px;
+    left: -90px;
+}
+
+
+
+form{
+    background-color: #fafafa;
+    padding: 30px 0;
+}
+

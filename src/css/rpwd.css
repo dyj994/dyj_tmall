@@ -1,0 +1,19 @@
+main{
+    width: 60%;
+}
+main form{
+    width: 90%;
+    margin: 0 auto;
+}
+.layui-form-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.layui-form-label{
+    width: 150px;
+}
+.layui-input-block{
+    width: 300px;
+    margin-left: 20px;
+}

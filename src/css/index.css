@@ -1,0 +1,409 @@
+
+
+
+/* 主体部分 */
+main {
+    width: 1190px;
+    /* height: 3392px; */
+    margin: 0 auto 100px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* 主体导航部分 */
+main .main_nav {
+    width: 100%;
+    height: 43px;
+
+}
+
+main .main_nav h2 {
+    margin: 15px 0 0 18px;
+    font-size: 16px;
+    color: #fe0137;
+    float: left;
+}
+
+main .main_nav .main_nav_list {
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 0 0 250px;
+}
+
+main .main_nav .main_nav_list a {
+    width: 56px;
+    height: 35px;
+    margin: 1px 16px 0 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8b8b8b;
+}
+main .main_nav .main_nav_list a:hover{
+    color: #fe0137;
+    text-decoration: underline;
+}
+
+main .main_nav .main_nav_list a:nth-of-type(1),
+main .main_nav .main_nav_list a:nth-of-type(2) {
+    width: 116px;
+}
+
+main .main_nav .main_nav_list a img {
+    width: 100px;
+    height: 30px;
+}
+
+/* 主体第一部分  商品类别列表  轮播图  右侧 */
+main .main_first_part {
+    height: 533px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* 商品类别列表 */
+main .main_first_part .category {
+    float: left;
+    margin: 12px 0 0 18px;
+    width: 212px;
+    overflow: hidden;
+}
+
+main .main_first_part .category .cate_list {
+    line-height: 25px;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 5px;
+    display: block;
+    padding-left: 10px;
+}
+
+main .main_first_part .category .cate_list i {
+    margin-right: 5px;
+}
+
+main .main_first_part .category .cate_list span:hover {
+    color: #fe0137;
+    text-decoration: underline;
+}
+
+/* 轮播图 */
+main .two_swipers {
+    margin-top: 14px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .two_swipers .first_swiper,
+main .two_swipers .second_swiper {
+    width: 520px;
+    position: relative;
+    border-radius: 18px;
+}
+
+main .two_swipers .first_swiper {
+    height: 280px;
+}
+
+main .two_swipers .second_swiper {
+    height: 200px;
+    margin-top: 20px;
+}
+
+main .two_swipers .first_swiper ul,
+main .two_swipers .second_swiper ul {
+    width: 520px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .two_swipers .second_swiper ul {
+    height: 206px;
+}
+
+main .two_swipers .first_swiper ul {
+    height: 280px;
+}
+
+main .two_swipers .first_swiper ul li img {
+    width: 520px;
+    height: 280px;
+}
+
+main .two_swipers .first_swiper li,
+main .two_swipers .second_swiper li {
+    float: left;
+    width: 520px;
+}
+
+main .two_swipers .first_swiper li {
+    height: 280px;
+}
+
+main .two_swipers .second_swiper li {
+    height: 206px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .two_swipers .second_swiper li img {
+    width: 49%;
+}
+
+main .two_swipers .first_swiper ol,
+main .two_swipers .second_swiper ol {
+    width: 520px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -260px;
+}
+
+main .two_swipers .first_swiper ol {
+    height: 280px;
+}
+
+main .two_swipers .second_swiper ol {
+    height: 280px;
+}
+
+main .two_swipers .first_swiper ol li,
+main .two_swipers .second_swiper ol li {
+    width: 5px;
+    height: 5px;
+}
+
+main .two_swipers .first_swiper div.left-arrow,
+main .two_swipers .second_swiper div.left-arrow,
+main .two_swipers .first_swiper div.right-arrow,
+main .two_swipers .second_swiper div.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px !important;
+
+}
+
+main .two_swipers .first_swiper .left-arrow,
+main .two_swipers .second_swiper .left-arrow {
+    left: 0;
+}
+
+main .two_swipers .first_swiper .right-arrow,
+main .two_swipers .second_swiper .right-arrow {
+    right: 0;
+}
+
+/* 右侧内容区 */
+main .main_first_part .rightcont {
+    float: left;
+    margin: 14px 0 0 15px;
+    width: 384px;
+    height: 508px;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 右侧第一部分  登录入口 */
+main .main_first_part .rightcont .login_entrance {
+    width: 384px;
+    height: 126px;
+}
+
+main .main_first_part .rightcont .login_entrance a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 106px;
+    margin: 20px auto 0;
+    color: #333;
+    font-size: 12px;
+}
+
+main .main_first_part .rightcont .login_entrance a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin: 0px auto;
+    display: block;
+}
+
+main .main_first_part .rightcont .login_entrance a span {
+    color: #333;
+    font-size: 12px;
+}
+
+main .main_first_part .rightcont .login_entrance a:hover {
+    text-decoration: underline;
+}
+
+/* 右侧第二部分  图片广告 */
+main .main_first_part .rightcont .right_ad {
+    width: 356px;
+    height: 141px;
+    margin: 17px 0 0 14px;
+}
+
+main .main_first_part .rightcont .right_ad img {
+    width: 356px;
+    height: 141px;
+    border-radius: 6px;
+}
+
+/* 右侧第三部分 公告*/
+main .main_first_part .rightcont .right_announce {
+    width: 370px;
+    height: 28px;
+    margin: 27px 0 0 14px;
+}
+
+main .main_first_part .rightcont .right_announce p {
+    color: #666;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 12px;
+}
+
+main .main_first_part .rightcont .right_announce p span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 6px;
+    line-height: 16px;
+}
+
+/* 右侧第四部分 用户功能 */
+main .main_first_part .rightcont .user_functions {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .main_first_part .rightcont .user_functions a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 51px;
+}
+
+main .main_first_part .rightcont .user_functions a i {
+    font-weight: 600;
+    font-size: 22px;
+
+    color: #000;
+}
+
+main .main_first_part .rightcont .user_functions a span {
+    font-size: 12px;
+    color: #333;
+    width: 60px;
+    height: 18px;
+}
+
+main .main_first_part .rightcont .user_functions a span:hover {
+    text-decoration: underline;
+}
+
+/* 猜你喜欢 */
+main .main_guess_like{
+    margin: 44px 18px 16px;
+}
+main .main_guess_like .like_title{
+    margin: 10px 0;
+    overflow: hidden;
+}
+main .main_guess_like .like_title span{
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+main .main_guess_like .like_title .like_recommend{
+    margin: 2px 0 0 6px;
+    float: left;
+    width: 68px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fe0137;
+    text-align: center;
+}
+main .main_guess_like .like_title .like_recommend span{
+    width: 68px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+/* 猜你喜欢  数据 */
+
+main .main_guess_like{
+    margin: 20px auto;
+    width: 95%;
+}
+main .main_guess_like .like_data{
+    margin-top: 18px;
+    display: block;
+    width: 1154px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .main_guess_like .like_data li{
+    width: 16%;
+    height: 304px;
+    border-radius: 18px;
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 22px;
+    position: relative;
+}
+main .main_guess_like .like_data li a img{
+    width: 220px;
+    height: 220px;
+    border-radius: 18px;
+}
+main .main_guess_like .like_data li a p.goods_title{
+    width: 220px;
+    height: 45px;
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+}
+main .main_guess_like .like_data li a p.goods_title:hover{
+    color: #ff5000;
+}
+main .main_guess_like .like_data li a span.goods_price{
+    margin: 5px 0 0 6px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff5000;
+    font-weight: bolder;
+}
+
+
+
+

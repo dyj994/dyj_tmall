@@ -1,0 +1,189 @@
+main{
+    margin: 40px auto;
+}
+main .goods_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* 左侧放大镜 */
+.wrapper{
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.glass{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 450px;
+    top: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: none;
+    z-index: 4;
+}
+.glass img{
+    width: 800px;
+    height: 800px;
+    z-index: 3;
+    position: absolute;
+}
+.wrapper .magnify{
+    position: relative;
+}
+.wrapper .magnify,
+.wrapper .magnify img
+{
+    width: 400px;
+    height: 400px;
+}
+.mask{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.smallPic{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.smallPic li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.smallPic li.active{
+    border: 1px solid #ff5000;
+}
+.smallPic li img{
+    width: 90px;
+    height: 90px;
+}
+
+/* 右侧商品详情 */
+.detail_info{
+    height: 100%;
+    width: 600px;
+    padding: 180px 0 0 20px;
+}
+.detail_info p:nth-of-type(2){
+    height: 60px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .goods_info .detail_info p.title{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: '雅宋';
+    width: 80%;
+    line-height: 30px;
+}
+
+main .goods_info .detail_info span.price{
+    font-weight: 900;
+    font-size: 26px;
+    color: #ff5000;
+    line-height: 40px;
+}
+
+/* 加入购物车部分 */
+main .goods_info .detail_info .functional{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .goods_info .detail_info .functional .num_control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80px;
+    line-height: 50px;
+    height: 40px;
+}
+main .goods_info .detail_info .functional .num_control input{
+    height: 40px;
+    width: 60px;
+    outline: none;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 4px;
+}
+main .goods_info .detail_info .functional .num_control .num_operation{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    z-index: none;
+}
+main .goods_info .detail_info .functional .num_control .num_operation button{
+    width: 70%;
+    height: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #ccc;
+    border: 0;
+    cursor: pointer;
+}
+main .goods_info .detail_info .functional .addToCart{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #ff5000;
+    box-shadow: inset 3px 3px 5px #fff,
+    inset -4px -1px 3px #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.goods_related{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.goods_related .lazyimg,
+.goods_related .lazyimg div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main .goods_related .lazyimg p{
+    width: 80%;
+}
+
